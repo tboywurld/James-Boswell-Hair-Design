@@ -19,20 +19,32 @@ import {
   MessageCircle
 } from 'lucide-react';
 
+import imgTeam from './assets/images/regenerated_image_1778438972844.webp';
+import imgPortfolio1 from './assets/images/regenerated_image_1778439171506.webp';
+import imgPortfolio2 from './assets/images/regenerated_image_1778439172433.webp';
+import imgPortfolio3 from './assets/images/regenerated_image_1778439173131.webp';
+import imgPortfolio4 from './assets/images/regenerated_image_1778439174277.webp';
+import imgPortfolio5 from './assets/images/regenerated_image_1778439175386.webp';
+import imgPortfolio6 from './assets/images/regenerated_image_1778439174899.webp';
+
 export const IMAGES = {
-  HERO: "/input_file_0.png",
-  TEAM_GROUP: "/src/assets/images/regenerated_image_1778438972844.webp",
+  HERO: "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=2069&auto=format&fit=crop", // Elegant Salon Exterior
+  TEAM_GROUP: imgTeam,
   PORTFOLIO: [
-    "/src/assets/images/regenerated_image_1778439171506.webp",
-    "/src/assets/images/regenerated_image_1778439172433.webp",
-    "/src/assets/images/regenerated_image_1778439173131.webp",
-    "/src/assets/images/regenerated_image_1778439174277.webp",
-    "/src/assets/images/regenerated_image_1778439175386.webp",
-    "/src/assets/images/regenerated_image_1778439174899.webp",
+    imgPortfolio1,
+    imgPortfolio2,
+    imgPortfolio3,
+    imgPortfolio4,
+    imgPortfolio5,
+    imgPortfolio6,
   ],
   BEFORE_AFTER: [
-    { label: "Balayage Transformation", img: "/input_file_3.png" }, // Pink/Transform
-    { label: "Precision Cut", img: "/input_file_2.png" }
+    { label: "Balayage Transformation", img: imgPortfolio1 },
+    { label: "Precision Cut", img: imgPortfolio2 }
+  ],
+  TRANSFORMATION: [
+    { label: "Signature Blonde", img: imgPortfolio3 },
+    { label: "Modern Bob", img: imgPortfolio4 }
   ]
 };
 
