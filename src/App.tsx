@@ -26,8 +26,9 @@ import {
   RefreshCw,
   Eye
 } from 'lucide-react';
-import { IMAGES, SERVICES, TESTIMONIALS, TEAM, STATS, BEFORE_AFTER } from './constants';
+import { IMAGES, SERVICES, TESTIMONIALS, TEAM, STATS } from './constants';
 import { GoogleGenAI } from "@google/genai";
+import { Logo } from './components/Logo';
 
 const SectionHeader = ({ title, subtitle, light = true }: { title: string, subtitle: string, light?: boolean }) => (
   <div className="text-center mb-20 px-4">
@@ -86,6 +87,9 @@ export default function App() {
           <span className="text-[9px] uppercase tracking-[0.5em] text-gold whitespace-nowrap">James Boswell Hair Design</span>
         </div>
         <div className="flex flex-col gap-6 items-center">
+          <a href="https://www.instagram.com/jamesboswellhairdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <Instagram size={14} className="text-white/20 hover:text-gold transition-colors cursor-pointer" />
+          </a>
           <Facebook size={14} className="text-white/20 hover:text-gold transition-colors cursor-pointer" />
           <div className="h-4 w-[1px] bg-white/10" />
           <span className="text-[9px] font-bold uppercase tracking-widest text-white/20">UK</span>
@@ -96,10 +100,7 @@ export default function App() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-editorial-black/95 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-8'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:pl-32 flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => scrollTo('hero')}>
-            <div className="text-xl md:text-2xl font-serif tracking-tighter uppercase text-white">
-              James Boswell
-              <span className="block text-[8px] tracking-[0.5em] font-sans -mt-1 text-gold">Hair Design</span>
-            </div>
+            <Logo className="scale-90 md:scale-100 origin-left" />
           </div>
 
           <div className="hidden lg:flex items-center gap-12">
@@ -205,8 +206,8 @@ export default function App() {
             >
               <div className="aspect-[4/5] overflow-hidden border border-white/10 group">
                 <img 
-                  src={IMAGES.TEAM_GROUP} 
-                  alt="The Team" 
+                  src={IMAGES.ABOUT_STUDIO} 
+                  alt="The Studio" 
                   className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000" 
                   referrerPolicy="no-referrer"
                 />
@@ -521,7 +522,7 @@ export default function App() {
             </h2>
             <div className="flex flex-col sm:flex-row gap-8 justify-center mt-12">
               <a 
-                href="mailto:Jamesboswellhairdesign@gmail.com"
+                href="mailto:bozzyj@aol.com"
                 className="px-16 py-6 bg-white text-editorial-black text-[10px] font-bold uppercase tracking-[0.4em] hover:bg-gold hover:text-white transition-all shadow-2xl"
               >
                 Book Now
@@ -542,16 +543,15 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:pl-32">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-20">
             <div className="space-y-12">
-              <div className="text-2xl font-serif tracking-tighter uppercase text-white">
-                James Boswell
-                <span className="block text-[8px] tracking-[0.5em] font-sans -mt-1 text-gold">Hair Design</span>
-              </div>
+              <Logo className="items-start" />
               <p className="text-xs text-white/30 leading-loose max-w-xs font-light">
                 Redefining the standards of precision cutting and bespoke coloring in Oxfordshire. An award-winning destination for luxury hair.
               </p>
               <div className="flex gap-6">
                 <Facebook size={16} className="text-white/20 hover:text-gold transition-colors cursor-pointer" />
-                <Instagram size={16} className="text-white/20 hover:text-gold transition-colors cursor-pointer" />
+                <a href="https://www.instagram.com/jamesboswellhairdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+                  <Instagram size={16} className="text-white/20 hover:text-gold transition-colors cursor-pointer" />
+                </a>
               </div>
             </div>
 
@@ -560,7 +560,7 @@ export default function App() {
               <div className="space-y-6 text-xs text-white/40 leading-loose uppercase tracking-widest font-bold">
                 <p>6A White Lion Walk, <br/>Banbury OX16 5UD, UK</p>
                 <p>+44 1295 262922</p>
-                <p className="lowercase tracking-normal font-light italic">Jamesboswellhairdesign@gmail.com</p>
+                <p className="lowercase tracking-normal font-light italic">bozzyj@aol.com</p>
               </div>
             </div>
 

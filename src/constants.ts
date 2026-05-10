@@ -19,17 +19,21 @@ import {
   MessageCircle
 } from 'lucide-react';
 
-import imgTeam from './assets/images/regenerated_image_1778438972844.webp';
-import imgPortfolio1 from './assets/images/regenerated_image_1778439171506.webp';
-import imgPortfolio2 from './assets/images/regenerated_image_1778439172433.webp';
-import imgPortfolio3 from './assets/images/regenerated_image_1778439173131.webp';
-import imgPortfolio4 from './assets/images/regenerated_image_1778439174277.webp';
-import imgPortfolio5 from './assets/images/regenerated_image_1778439175386.webp';
-import imgPortfolio6 from './assets/images/regenerated_image_1778439174899.webp';
+import imgTeam from './assets/images/regenerated_image_1778449477415.jpg';
+import imgAbout from './assets/images/regenerated_image_1778448676085.jpg';
+import imgPortfolio1 from './assets/images/regenerated_image_1778449471457.jpg';
+import imgPortfolio2 from './assets/images/regenerated_image_1778449472309.jpg';
+import imgPortfolio3 from './assets/images/regenerated_image_1778449473751.jpg';
+import imgPortfolio4 from './assets/images/regenerated_image_1778449474573.jpg';
+import imgPortfolio5 from './assets/images/regenerated_image_1778449475519.jpg';
+import imgPortfolio6 from './assets/images/regenerated_image_1778449476222.jpg';
+import imgBA1 from './assets/images/regenerated_image_1778448964833.jpg';
+import imgBA2 from './assets/images/regenerated_image_1778448965722.jpg';
 
 export const IMAGES = {
   HERO: "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=2069&auto=format&fit=crop", // Elegant Salon Exterior
   TEAM_GROUP: imgTeam,
+  ABOUT_STUDIO: imgAbout,
   PORTFOLIO: [
     imgPortfolio1,
     imgPortfolio2,
@@ -39,8 +43,8 @@ export const IMAGES = {
     imgPortfolio6,
   ],
   BEFORE_AFTER: [
-    { label: "Balayage Transformation", img: imgPortfolio1 },
-    { label: "Precision Cut", img: imgPortfolio2 }
+    { label: "Balayage Transformation", img: imgBA1 },
+    { label: "Precision Cut", img: imgBA2 }
   ],
   TRANSFORMATION: [
     { label: "Signature Blonde", img: imgPortfolio3 },
